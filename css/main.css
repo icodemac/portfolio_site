@@ -9,6 +9,16 @@ body {
   margin: 0 auto;
 }
 
+.clearfix {
+  clear: both;
+}
+
+.to-uppercase {
+  text-transform: uppercase;
+}
+
+/* Header */
+
 .main-header__brand {
   display: inline-block;
   vertical-align: middle;
@@ -41,4 +51,91 @@ body {
 }
 
 /* Main */
+
+.main-section {
+  padding: 100px 30px;
+}
+
+.main-section > div {
+  width: 50%;
+  float: left;
+}
+
+.main-section__image {
+  text-align: right;
+}
+
+.main-section__welcome {
+  color: #797979;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.main-section__name {
+  color:#05364d;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.main-section__position {
+  font-size: 24px;
+  font-weight: 300;
+  color: #05364d;
+  margin-bottom: 20px;
+}
+
+.main-section__social-networks a {
+  display: inline-block;
+  color: rgba(5,54,77,.5);
+  font-size: 20px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.main-section__social-networks a:hover {
+  color:#05364d;
+}
+
+.main-section__btn {
+  margin-top: 20px;
+  border: none;
+  background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Statistics */
+
+.statistics {
+  padding-top: 100px;
+}
+
+.statistics__item {
+  display: inline-block;
+  width: 150px;
+  background-color: #f8faff;
+  padding: 10px 15px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.statistics__number {
+  font-size: 27px;
+  margin-bottom: 5px;
+  color: #1C44e4;
+}
+
+.statistics__title {
+  font-size: 16px;
+  font-weight: 300;
+  color: #797979;
+}
 

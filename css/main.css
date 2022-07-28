@@ -1,5 +1,12 @@
 /* Main */
 
+.main-banner {
+  background: url('../images/main-banner.png') no-repeat top center;
+  background-position: center;
+  background-size: cover;
+  min-height: 890px;
+}
+
 .main-section {
   padding: 6.25rem 1.87rem;
 }
@@ -63,8 +70,9 @@
   width: 150px;
   background-color: #f8faff;
   padding: 0.625rem 0.94rem;
-  margin-right: 1.25rem;
+  margin-right: 0;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .statistics__number {
@@ -377,9 +385,154 @@
 
 .partners {
   padding-top: 1.87rem;
+  padding-bottom: 3.12rem;
 }
 
 .partner {
   display: inline-block;
   padding: 0 1.87rem;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 991px) {
+
+  /* Main section */
+
+  .main-section__image {
+    display: none;
+  }
+
+  .main-section > div {
+    width: 100%;
+  }
+
+  /* Statistics */
+
+  .statistics {
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+   /* About me section */
+
+   .about-me {
+    padding: 1.5rem 0;
+  }
+
+  .about-me > div {
+    width: 100%;
+  }
+
+  .about-me__image img {
+    display: none;
+  }
+
+  /* Services */
+
+  .services {
+    padding: 1.5rem 0;
+  }
+
+  .service-card {
+    width: 45%;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Testimonials section */
+
+  .testimonial {
+    padding: 1.5rem 0;
+  }
+
+  .client-item > div {
+    width: 100%;
+    float: none;
+  }
+
+  /* Blog section */
+
+  .blog {
+    padding: 1.5rem 0;
+  }
+
+  .card-item {
+    width: 45%;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Partners section */
+
+  .partners {
+    padding: 1.5rem 0;
+  }
+
+  .partner {
+    display: block;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  /* Main section */
+
+  .main-banner {
+    background: none;
+    min-height: auto;
+  }
+
+  .main-section__btn {
+    display: none;
+  }
+
+  .main-section > div {
+    width: 100%;
+  }
+
+  .main-section__welcome {
+    font-size: 1.87rem;
+  }
+
+  .main-section__name {
+    font-size: 3rem;
+    line-height: 2.62rem;
+  }
+
+  .main-section__position {
+    line-height: 2.25rem;
+  }
+
+  /* Statistics section */
+
+  .statistics__item {
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Services section */
+
+  .service-card__item {
+    width: 100%;
+    margin-bottom: 1.25rem;
+    margin-right: 0;
+  }
+
+  /* Portfolio section */
+
+  .portfolio {
+    padding: 1.5rem 0;
+  }
+
+  .portfolio-item {
+    width: 100%;
+  }
+
+  .portfolio-item-1,
+  .portfolio-item-2,
+  .portfolio-item-3 {
+    position: static;
+  }
 }

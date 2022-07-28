@@ -44,11 +44,13 @@
       </div>
       <form action="./server.php" method="post">
         <textarea rows="10" name="message" placeholder="Enter message"></textarea>
-        <div class="half-row contact-name">
-          <input type="text" name="name" placeholder="Enter your name" required>
-        </div>
-        <div class="half-row contact-email">
-          <input type="email" name="email" placeholder="Enter your email" required>
+        <div class="half-flex">
+          <div class="contact-name">
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="contact-email">
+            <input type="email" name="email" placeholder="Enter your email" required>
+          </div>
         </div>
         <input type="text" name="subject" placeholder="Enter subject" required>
         <button class="button contact-send" type="submit">Send message</button>
